@@ -1,6 +1,3 @@
 const solution = function (array, height) {
-  return array
-    .concat([height])
-    .sort((a, b) => b - a)
-    .findIndex((element) => element === height);
+  return array.filter((element) => element > height).length;
 };
