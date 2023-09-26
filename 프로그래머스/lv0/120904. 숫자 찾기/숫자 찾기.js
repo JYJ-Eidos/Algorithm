@@ -1,5 +1,4 @@
 const solution = (num, k) => {
-  return String(num).split("").indexOf(String(k)) === -1
-    ? -1
-    : String(num).split("").indexOf(String(k)) + 1;
+  const index = String(num).split("").indexOf(String(k));
+  return index === -1 ? -1 : index + 1;
 };
