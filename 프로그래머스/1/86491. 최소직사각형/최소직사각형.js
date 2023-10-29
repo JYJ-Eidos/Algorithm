@@ -1,0 +1,1 @@
+const solution = (sizes) => Math.max(...sizes.map((el) => el.sort((a, b) => a - b)[0])) * Math.max(...sizes.map((el) => el.sort((a, b) => a - b)[1]));
